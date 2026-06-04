@@ -9,7 +9,10 @@ export default defineConfig({
     test: {
         include:['tests/**/*.spec.ts','src/**/*.spec.ts'],
         environment: 'node',
-        globals: true
+        globals: true,
+        typecheck: {
+            tsconfig: './tsconfig.test.json'
+        }
     },
     resolve: {
         alias:{

@@ -1,0 +1,53 @@
+{
+  "permissions": {
+    "allow": [
+        "Bash(node comprehensive_check.js:*)",
+        "PowerShell(pnpm execute *)",
+        "Bash(pnpm add -D vitest *)",
+        "Bash(pnpm install *)",
+        "Bash(Start-Sleep -Seconds 3)",
+        "Bash(curl -s http://localhost:3000/)",
+        "Bash(curl -s http://localhost:5173/)",
+        "Bash(python3 -m json.tool)",
+        "Bash(pnpm test *)",
+        "Bash(git add *)",
+        "Bash(git commit -m ' *)",
+        "Bash(curl *)",
+        "Read",
+        "Glob",
+        "Grep",
+        "Bash(uv add *)",
+        "Bash(uv sync *)",
+        "Bash(uv pip list *)",
+        "Bash(git status *)",
+        "Bash(git diff *)",
+        "Bash(git log *)",
+        "Bash(git add *)",
+        "Bash(git commit *)",
+        "Bash(git checkout *)",
+        "Bash(git branch *)",
+        "Bash(cat *)",
+        "Bash(ls *)",
+        "Bash(head *)",
+        "Bash(tail *)",
+        "Bash(mkdir *)",
+        "Bash(cp *)",
+        "Bash(wc *)"
+    ],
+    "deny": [
+        "Bash(rm -rf *)",
+        "Bash(sudo *)",
+        "Bash(chmod 777 *)",
+        "Bash(curl * | *)",
+        "Bash(wget * | *)",
+        "Bash(git push --force *)",
+        "Bash(git reset --hard *)",
+        "Bash(python -c *)",
+        "Read(.env)",
+        "Read(.env.*)",
+        "Edit(.env)",
+        "Edit(.env.*)"
+    ],
+    "ask": []
+  }
+}

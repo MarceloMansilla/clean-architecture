@@ -1,5 +1,5 @@
 import type { FastifyRequest, FastifyReply} from "fastify"
-import { createOrder} from "@compisition/container.js"
+import { createOrder} from "@composition/container.js"
 
 export const OrdersController = {
     async create(req: FastifyRequest, reply: FastifyReply){
